@@ -1,0 +1,24 @@
+appname: ldap-proxy
+#开放的端口
+port: 9999
+
+expire: 60 #过期时间，默认是单位是分钟
+
+loglevel: trace
+logformat: json
+logpath: ldap.log
+##存储用户的登陆信息
+store:
+  name: redis
+  conninfo: '{"addr":"127.0.0.1:6379","dbnum":"0"}'
+
+# ldap 连接信息
+ldap:
+  active: false
+  addr: "xxxxx:389"
+  basedn: "xxxxx"
+  binddn: "xxxx"
+  bindpass: "xxxxx"
+  authfilter: "xxxxxx"
+  tls: false
+  starttls: false
