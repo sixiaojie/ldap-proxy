@@ -3,7 +3,8 @@
  
 ## 实现方式：
 
-<h5> client -> nginx ->（auth）-> backend
+
+ client -> nginx ->（auth）-> backend
 
 nginx auth module模块： 一般需要安装nginx auth module（默认安装自带）模块即可.
 
